@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 const Work = () => {
   return (
     <div className="work-container">
-      <h1 className="project-heading"></h1>
+      <h1 className="project-heading"> Projects</h1>
       <div className="project-container">
         {WorkCardData.map((val,index)=>{
           return (
