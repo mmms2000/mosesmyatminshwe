@@ -1,9 +1,30 @@
-import React from 'react'
+import "./WorkCardStyles.css";
+import Workcard from "./Workcard";
+import WorkCardData from "./WorkCardData"
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Work = () => {
   return (
-    <div>Work</div>
-  )
-}
+    <div className="work-container">
+      <h1 className="project-heading"></h1>
+      <div className="project-container">
+        {WorkCardData.map((val,index)=>{
+          return (
+            <Workcard 
+            key={index}
+            imgsrc={val.imgsrc}
+            title={val.title}
+            text={val.text}
+            view={val.view}
+            source={val.source}
+            stack={val.stack}
+            />
+          )
+        })}
+      </div>
+    </div>
+  );
+};
 
-export default Work
+export default Work;

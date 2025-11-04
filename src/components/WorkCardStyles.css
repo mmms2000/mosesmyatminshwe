@@ -27,6 +27,14 @@
     padding: 1rem 0;
 }
 
+.p2{
+font-size: 1rem;
+padding-top: 2rem;
+padding-bottom: 1rem;
+ color: rgb(189, 210, 72);
+ font-weight: bold;
+}
+
 .pro-detail{
     padding-bottom: 1rem;
     font-size: 1.1rem;
