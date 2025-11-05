@@ -1,6 +1,14 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaMailBulk, FaPhone } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaMailBulk,
+  FaPhone,
+} from "react-icons/fa";
 import "./FooterStyles.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -24,25 +32,32 @@ const Footer = () => {
           </div>
         </div>
         <div className="right">
-          <h4> Who I Am</h4>
+          <h4> About This Site</h4>
           <p>
             {" "}
-            I'm Moses, a passionate frontend developer, constantly learning and
-            growing through new challenges every day.
+            This portfolio is a reflection of my journey as a developer always
+            evolving, just like the projects I build.
           </p>
-          <div className="social"> 
-            <FaFacebook size={30}
-            style={{color:"#fff", marginRight:"1rem"}}
+          <div className="social">
+            <Link to="https://www.facebook.com/moses.kmc/">
+            <FaFacebook
+              size={30}
+              style={{ color: "#fff", marginRight: "1rem" }}
             />
-            <FaInstagram size={30}
-            style={{color:"#fff", marginRight:"1rem"}}
+            </Link>
+            <Link to="https://github.com/mmms2000">
+            <FaGithub
+              size={30}
+              style={{ color: "#fff", marginRight: "1rem" }}
             />
-             <FaLinkedin size={30}
-            style={{color:"#fff", marginRight:"1rem"}}
+            </Link>
+            <FaLinkedin
+              size={30}
+              style={{ color: "#fff", marginRight: "1rem" }}
             />
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
